@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PoultryDetect - Poultry Health Hub</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Apply Inter font family */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+        /* Custom styles for a subtle glow effect on the button */
+        .btn-glow:hover {
+            box-shadow: 0 0 15px 5px rgba(34, 197, 94, 0.4);
+        }
+        /* Style for the card overlay text */
+        .card-title {
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+<body class="bg-black text-white">
+
+    <!-- Header & Navigation -->
+    <header class="py-4 px-4 sm:px-6 lg:px-8">
+        <nav class="container mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="text-2xl font-bold">PoultryDetect</a>
+            
+            <!-- Desktop Navigation Links -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#" class="hover:text-green-400 transition-colors duration-300">HOME</a>
+                <a href="#" class="hover:text-green-400 transition-colors duration-300">ABOUT</a>
+                <a href="#" class="hover:text-green-400 transition-colors duration-300">CONTACT</a>
+            </div>
+            
+            <!-- Social Media Icons -->
+            <div class="hidden md:flex items-center space-x-4">
+                <!-- Twitter -->
+                <a href="#" aria-label="Twitter" class="hover:text-green-400 transition-colors duration-300">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.223.085 4.93 4.93 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+                </a>
+                <!-- LinkedIn -->
+                 <a href="#" aria-label="LinkedIn" class="hover:text-green-400 transition-colors duration-300">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden p-2">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-4 pt-2 pb-4 space-y-2">
+             <a href="#" class="block hover:text-green-400 transition-colors duration-300">HOME</a>
+             <a href="#" class="block hover:text-green-400 transition-colors duration-300">ABOUT</a>
+             <a href="#" class="block hover:text-green-400 transition-colors duration-300">CONTACT</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Hero Section -->
+        <section class="text-center py-20 md:py-32">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+                Welcome to <span class="text-green-400">Poultry Health Hub</span>,
+            </h1>
+            <p class="mt-4 text-xl md:text-2xl max-w-4xl mx-auto text-gray-300">
+                your comprehensive resource for poultry disease management and prevention.
+            </p>
+            <div class="mt-10">
+                <button class="bg-green-600 text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-green-700 transition-all duration-300 transform hover:scale-105 btn-glow">
+                    GET STARTED
+                </button>
+            </div>
+        </section>
+
+        <!-- Cards Section -->
+        <section class="py-16">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Card 1: Coccidiosis -->
+                <div class="relative rounded-xl overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://placehold.co/600x400/000000/FFFFFF?text=Coccidiosis+Concept" alt="Illustration representing Coccidiosis" class="w-full h-64 object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-end p-6">
+                        <h3 class="text-white text-3xl font-bold card-title">Coccidiosis</h3>
+                    </div>
+                </div>
+
+                <!-- Card 2: Sick Chicken -->
+                <div class="relative rounded-xl overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://placehold.co/600x400/a38068/FFFFFF?text=Sick+Chicken" alt="A chicken showing signs of illness" class="w-full h-64 object-cover">
+                     <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                </div>
+
+                <!-- Card 3: Healthy Chicken -->
+                <div class="relative rounded-xl overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://placehold.co/600x400/8c966a/FFFFFF?text=Healthy+Chicken" alt="A healthy chicken in a natural environment" class="w-full h-64 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                </div>
+
+                <!-- Card 4: Farm Cartoon -->
+                <div class="relative rounded-xl overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://placehold.co/600x400/e0f2fe/333333?text=Poultry+Farm" alt="A cartoon illustration of a happy poultry farm" class="w-full h-64 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" class="hidden fixed bottom-5 right-5 bg-green-600 text-white p-3 rounded-full shadow-lg hover:bg-green-700 transition-colors duration-300 z-50">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path></svg>
+    </button>
+
+    <script>
+        // JavaScript for mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // JavaScript for Scroll to Top button
+        const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+        // Show button when user scrolls down 200px
+        window.onscroll = function() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        };
+
+        // Scroll to the top when the button is clicked
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>

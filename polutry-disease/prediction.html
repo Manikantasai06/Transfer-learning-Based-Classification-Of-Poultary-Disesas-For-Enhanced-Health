@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poultry Detect - Prediction</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            border-bottom: 1px solid #333;
+        }
+        .header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .header .nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        .header .social-icons a {
+            color: #fff;
+            margin-left: 15px;
+            text-decoration: none;
+            font-size: 18px; /* Assuming icons are text for now */
+        }
+        .content {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .content h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .content h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+        .upload-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+        }
+        .upload-section label {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .upload-section input[type="file"] {
+            margin-bottom: 20px;
+            color: #fff; /* To make the "No file chosen" text visible */
+        }
+        /* Custom styling for file input to match the image closely */
+        .upload-section .file-input-container {
+            display: flex;
+            align-items: center;
+            background-color: #333; /* Darker background for the input area */
+            border: 1px solid #555;
+            padding: 5px;
+            border-radius: 5px;
+            width: 400px; /* Adjust width as needed */
+        }
+        .upload-section .file-input-button {
+            background-color: #555;
+            color: #fff;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        .upload-section .file-input-name {
+            flex-grow: 1;
+            padding: 8px;
+            color: #fff;
+        }
+
+        .upload-section button {
+            background-color: #28a745; /* Green color for predict button */
+            color: #fff;
+            padding: 10px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 20px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .prediction-result {
+            font-size: 30px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <span style="font-size: 20px;">📷</span> Poultry Detect
+        </div>
+        <div class="nav">
+            <a href="/">HOME</a>
+            <a href="/predict">PREDICTION_PAGE</a>
+        </div>
+        <div class="social-icons">
+            <a href="#">X</a> <a href="#">🅸</a> <a href="#">🅵</a> <a href="#">🅛</a> </div>
+    </div>
+
+    <div class="content">
+        <h1>Prediction</h1>
+        <h2>Image Classification</h2>
+
+        <form action="/predict" method="post" enctype="multipart/form-data" class="upload-section">
+            <label for="pc_image">Upload Your Image:</label>
+            <div class="file-input-container">
+                <input type="file" id="pc_image" name="pc_image" accept="image/*" style="display: none;">
+                <label for="pc_image" class="file-input-button">Choose File</label>
+                <span id="file-name" class="file-input-name">No file chosen</span>
+            </div>
+            <button type="submit">predict</button>
+        </form>
+
+        {% if predict %}
+        <div class="prediction-result">
+            Hence, The infection type detected as {{ predict }}
+        </div>
+        {% else %}
+        <div class="prediction-result">
+            Hence, The infection type detected as
+        </div>
+        {% endif %}
+    </div>
+
+    <script>
+        document.getElementById('pc_image').addEventListener('change', function() {
+            var fileName = this.files[0] ? this.files[0].name : 'No file chosen';
+            document.getElementById('file-name').textContent = fileName;
+        });
+    </script>
+</body>
+</html>
