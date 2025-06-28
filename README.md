@@ -11,7 +11,7 @@ Poultry farming plays a significant role in the agricultural sector. However, di
 - 🧠 Transfer learning with fine-tuned CNN architectures
 - 🐓 Focused on poultry diseases (e.g., Newcastle, Fowl Pox, Coccidiosis)
 - 📸 Dataset preprocessing and augmentation for robust learning
-- 📈 Achieved ~XX% accuracy (replace with actual result)
+- 📈 Achieved ~90% accuracy
 - 📊 Real-time prediction support
 
 ## 🚀 Getting Started
@@ -23,5 +23,4 @@ Poultry farming plays a significant role in the agricultural sector. However, di
 - NumPy, OpenCV
 - Matplotlib, Seaborn
 
-### 📥 Installation
 
