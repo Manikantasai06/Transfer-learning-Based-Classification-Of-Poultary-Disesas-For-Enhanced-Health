@@ -3,6 +3,14 @@
 This project leverages **transfer learning** techniques to accurately classify poultry diseases using image data, aiming to enhance animal health management, reduce economic losses, and assist farmers and veterinarians with early disease detection.
 
 
+📊 Dataset
+
+Source: Kaggle: Pollen Grain Image Classification
+
+Contains labeled images of various pollen species.
+
+
+
 ## 📌 Project Overview
 
 Poultry farming plays a significant role in the agricultural sector. However, disease outbreaks can result in major losses. This project implements a deep learning model using **pre-trained convolutional neural networks (CNNs)** like VGG16, ResNet50, and MobileNet to detect diseases in poultry from images with high accuracy.
