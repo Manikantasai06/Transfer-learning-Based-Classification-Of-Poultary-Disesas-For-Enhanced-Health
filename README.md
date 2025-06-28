@@ -3,7 +3,7 @@
 This project leverages **transfer learning** techniques to accurately classify poultry diseases using image data, aiming to enhance animal health management, reduce economic losses, and assist farmers and veterinarians with early disease detection.
 
 
-##📊 Dataset
+# 📊 Dataset
 
 Source: Kaggle: https://www.kaggle.com/datasets/chandrashekarnatesh/poultry-diseases
 
