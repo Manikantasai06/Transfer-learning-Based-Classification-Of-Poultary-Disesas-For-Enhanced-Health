@@ -14,6 +14,7 @@ Source: Kaggle: https://www.kaggle.com/datasets/chandrashekarnatesh/poultry-dise
 
 Poultry farming plays a significant role in the agricultural sector. However, disease outbreaks can result in major losses. This project implements a deep learning model using **pre-trained convolutional neural networks (CNNs)** like VGG16, ResNet50, and MobileNet to detect diseases in poultry from images with high accuracy.
 
+
 ### 🔬 Key Features
 
 - 🧠 Transfer learning with fine-tuned CNN architectures
@@ -30,7 +31,7 @@ Poultry farming plays a significant role in the agricultural sector. However, di
 - TensorFlow / Keras
 - NumPy, OpenCV
 - Matplotlib, Seaborn
-___
+
 
 ## 🧪 Technologies Used
 
@@ -48,7 +49,7 @@ Flask
 
 
 
----
+
 
 ## 📜 License
 
