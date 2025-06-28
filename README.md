@@ -30,6 +30,7 @@ Poultry farming plays a significant role in the agricultural sector. However, di
 - TensorFlow / Keras
 - NumPy, OpenCV
 - Matplotlib, Seaborn
+___
 
 #📜 License
 
