@@ -31,4 +31,16 @@ Poultry farming plays a significant role in the agricultural sector. However, di
 - NumPy, OpenCV
 - Matplotlib, Seaborn
 
+#📜 License
+
+This project is licensed under the MIT License.
+See the LICENSE file for details.
+
+
+---
+
+Thanks to SmartBridge for this deep learning project on ai !
+
+
+
 
