@@ -35,17 +35,17 @@ Poultry farming plays a significant role in the agricultural sector. However, di
 
 ## 🧪 Technologies Used
 
-Python
+- Python
 
-TensorFlow / Keras
+- TensorFlow / Keras
 
-OpenCV / PIL
+- OpenCV / PIL
 
-Scikit-learn
+- Scikit-learn
 
-Pandas, NumPy
+- Pandas, NumPy
 
-Flask
+- Flask
 
 
 
