@@ -32,12 +32,7 @@ Poultry farming plays a significant role in the agricultural sector. However, di
 - Matplotlib, Seaborn
 ___
 
-📜 License
 
-This project is licensed under the MIT License.
-See the LICENSE file for details.
-
-Thanks to SmartBridge for this deep learning project on ai !
 
 
 
