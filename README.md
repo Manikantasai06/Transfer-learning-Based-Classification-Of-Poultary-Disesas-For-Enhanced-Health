@@ -25,7 +25,3 @@ Poultry farming plays a significant role in the agricultural sector. However, di
 
 ### 📥 Installation
 
-```bash
-git clone https://github.com/your-username/poultry-disease-classification.git
-cd poultry-disease-classification
-pip install -r requirements.txt
