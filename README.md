@@ -32,7 +32,7 @@ Poultry farming plays a significant role in the agricultural sector. However, di
 - Matplotlib, Seaborn
 ___
 
-🧪 Technologies Used
+## 🧪 Technologies Used
 
 Python
 
