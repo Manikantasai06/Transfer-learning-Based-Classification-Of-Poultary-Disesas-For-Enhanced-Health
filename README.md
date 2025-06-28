@@ -7,7 +7,6 @@ This project leverages **transfer learning** techniques to accurately classify p
 
 Source: Kaggle: https://www.kaggle.com/datasets/chandrashekarnatesh/poultry-diseases
 
-Contains labeled images of various pollen species.
 
 
 
