@@ -8,6 +8,25 @@ This project leverages **transfer learning** techniques to accurately classify p
 Source: Kaggle: https://www.kaggle.com/datasets/chandrashekarnatesh/poultry-diseases
 
 
+## 🧠 project structure 
+
+Project Root/
+│
+├── static/                      # Static files (CSS, JS, images)
+│   ├── assets/                  # Assets like stylesheets, JS, fonts
+│   ├── forms/                   # Form-related resources
+│   └── uploads/                # Uploaded files (e.g. images, inputs)
+│
+├── templates/                   # HTML templates for Flask rendering
+│   ├── blog-single.html         # Template for single blog post
+│   ├── blog.html                # Blog overview or list page
+│   ├── index.html               # Home page
+│   └── portfolio-details.html   # Portfolio/project detail page
+│
+├── app.py                       # 🚀 Main Flask application file
+├── healthy_vs_rotten.h5         # 🤖 Trained Machine Learning model
+├── ipython.html                 # Notebook results/exported HTML
+└── Readme.txt                   # 📄 Project description/instructions
 
 
 ## 📌 Project Overview
