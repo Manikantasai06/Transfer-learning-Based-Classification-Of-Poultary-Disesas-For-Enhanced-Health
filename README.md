@@ -10,6 +10,7 @@ Source: Kaggle: https://www.kaggle.com/datasets/chandrashekarnatesh/poultry-dise
 
 ## 🧠 project structure 
 ___
+
 Project Root/
 │
 ├── static/                      # Static files (CSS, JS, images)
