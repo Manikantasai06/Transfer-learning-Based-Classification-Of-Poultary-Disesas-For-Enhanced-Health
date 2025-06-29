@@ -54,7 +54,7 @@ Poultry farming plays a significant role in the agricultural sector. However, di
 ## 📜 License
 
 - This project is licensed under the MIT License.
-See the LICENSE file for details.
+See the LICENSEE file for details.
 
 
 ---
